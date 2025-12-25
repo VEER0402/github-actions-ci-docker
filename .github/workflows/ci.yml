@@ -23,4 +23,7 @@ jobs:
 
       - name: Run unit tests (Quality Gate)
         run: npm test
+      
+      - name: Build Docker image
+        run: docker build -t node-ci-app:ci .
 

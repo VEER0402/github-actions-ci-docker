@@ -1,0 +1,14 @@
+name: CI Skeleton
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  basic-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "CI pipeline triggered successfully"
+
